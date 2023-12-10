@@ -14,10 +14,10 @@ Submission of main.py, menu.py, options.py, runProgram.py, README
 
 Compilation/Run command: python runProgram.py
 
-Current Errors/Bugs
+## Current Errors/Bugs
  - N/A
 
-Notes:
+## Notes:
  - If the user picks option 6, I am assuming that they will pick a customer to make the order,
  as well as whatever that customer will order + the quantity.
  - I am also assuming that when it says "UnitPrice" in the OrderDetails table, that it's a reference to
@@ -26,11 +26,11 @@ Notes:
  ie. They can order multiple things however they will go under different order IDs.
  - Otherwise, should work as intended by the requirements :).
 
-References:
+## References:
 - N/A
 
 
-Normalization Process:
+## Normalization Process:
 - Given that we were allowed to assume the tables were already in 3NF, I Just took precaution
 to make sure the tables stayed in 3NF when adding the new entries. This meant making sure
 there were no transitive dependencies and making sure everything was independent on the tables.
