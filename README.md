@@ -40,7 +40,7 @@ Stored Procedures:
 Since they were written in DataGrip, I'll post the txt versions of them both here.
 
 # ADD NEW ORDER PROCEDURE
-'''
+
 create
     definer = root@`%` procedure AddNewOrder(IN customer_id int, IN product_id int, IN quantity int)
 BEGIN
@@ -75,11 +75,12 @@ WHERE
 
     -- Update stock quantity
     CALL UpdateStockQuantity(product_id, quantity);
-END;'''
+END;
 
 
 # UPDATE STOCK QUANTITY PROCEDURE
-''' create
+
+create
     definer = root@`%` procedure UpdateStockQuantity(IN product_id int, IN quantity int)
 BEGIN
     -- Update stock quantity in the Products table
@@ -87,4 +88,4 @@ BEGIN
     SET UnitsInStock = UnitsInStock - quantity
     WHERE ProductID = product_id;
 END; 
-'''
+
