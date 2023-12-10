@@ -78,11 +78,11 @@ END;'''
 
 
 # UPDATE STOCK QUANTITY PROCEDURE
-'''create
+''' create
     definer = root@`%` procedure UpdateStockQuantity(IN product_id int, IN quantity int)
 BEGIN
     -- Update stock quantity in the Products table
     UPDATE Products
     SET UnitsInStock = UnitsInStock - quantity
     WHERE ProductID = product_id;
-END;'''
+END; '''
