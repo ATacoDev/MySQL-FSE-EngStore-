@@ -70,7 +70,7 @@ WHERE
     FROM OrderDetails o
     WHERE
         o.ProductID = product_id;
-#     VALUES (order_id, product_id, quantity);
+     VALUES (order_id, product_id, quantity);
 
     -- Update stock quantity
     CALL UpdateStockQuantity(product_id, quantity);
